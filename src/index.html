@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit" />
+    <title>video-swf</title>
+    <meta name="Keywords" content="">
+    <meta name="description" content="" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" >
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+
+<body>
+
+<div id="video"></div>
+
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.videoswf.js"></script>
+<script>
+    var video1 = new Video({
+        // 必填，选择器
+        wrapper: '#video',
+        // 可选，默认宽度：600
+        width: 680,
+        // 可选，默认高度：350
+        height: 350,
+
+        // 必填，路径放置和flvplayer.swf同级
+        name: 'mv.flv',
+        // 可选，视频播放器路径，默认路径'media/flvplayer.swf'
+        swfdir: 'media/flvplayer.swf',
+
+        // 可选，默认配置项，flvplayer.swf播放器的配置参数按如下格式传入
+        // 可配置的参数说明参考http://blog.csdn.net/joyhen/article/details/23001487
+        swfparam: '&IsAutoPlay=1&IsContinue=1&BarPosition=3&BarTransparent=40&IsShowBar=3',
+
+        // 可选，flash加载出错的回调函数，不配置则使用默认的操作
+        flashLoadError: function(){ }
+    });
+</script>
+</body>
+</html>

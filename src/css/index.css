@@ -1,0 +1,4 @@
+#video{width: 680px;height: 350px;margin:40px auto;background-color: #000000;}
+.video-tip{background-color:#000;width:680px;height: 350px;line-height:350px;}
+.video-tip p{text-align:center;color:#fff;font-size: 18px;font-family: "Microsoft Yahei";}
+.video-tip p a{color:#57A900;}
