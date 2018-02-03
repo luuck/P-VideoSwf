@@ -1,5 +1,6 @@
 ## video-swf
 一款网页版使用flvplayer.swf播放器播放flv视频文件，兼容各大主流浏览器（包括ie6、7）。
+
 [demo](https://luuck.github.io/video-swf/src/index.html)
 
 ### 如何使用？
@@ -18,7 +19,7 @@
 ```
 
 3、Javascript
-```
+```Javascript
 var video = new Video({
     // 必填，选择器
     wrapper: '.video',
