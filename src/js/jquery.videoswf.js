@@ -77,7 +77,7 @@
                 swfparam: args.swfparam
             };
             var fls = _this._flashChecker();
-            $video = $(args.wrapper);  console.log(fls.f, fls.v);
+            $video = $(args.wrapper);  
             if(fls.f && fls.v > 20){
                 videohtml = _this._flashObj(obj);
             }else if(fls.f && fls.v < 20){
@@ -92,7 +92,7 @@
                 }else{
                     _this._opts.flashLoadError();
                 }
-            }console.log(videohtml);
+            }
             $video.append(videohtml);
         }
     };
